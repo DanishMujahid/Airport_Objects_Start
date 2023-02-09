@@ -1,4 +1,11 @@
 class Person {
+    constructor(name, bags = []) {
+        this.name = name;
+        this.bags = bags;
+    }
+    addBag(bag) {
+        this.bags.push(bag)
+    }
     // Include a Constructor Method for Properties: 
         // 1. Name
         // 2. Bags
@@ -6,5 +13,6 @@ class Person {
 
     // Include an addBag method
 }
+module.exports = Person
 
 //Export the Module
